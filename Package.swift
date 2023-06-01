@@ -10,6 +10,7 @@ let package = Package(name: "Atributika",
                                   .watchOS(.v2)],
                       products: [.library(name: "Atributika",
                                           targets: ["Atributika"])],
+                      dependencies: [.package(url: "https://github.com/onevcat/Kingfisher.git", .upToNextMajor(from: "7.6.2"))],
                       targets: [.target(name: "Atributika",
                                         path: "Sources"),
                                 .testTarget(
