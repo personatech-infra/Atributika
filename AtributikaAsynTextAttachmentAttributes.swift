@@ -38,42 +38,42 @@
 
  #if os(iOS)
 
-  internal struct AtributikaAsynTextAttachmentAttributes {
+  public struct AtributikaAsynTextAttachmentAttributes {
    /// An image name that will be created from the main bundle.
    /// This image will be displayed if remote image url is not present or
    /// while the remote image is donloading
-   internal var imageName: String?
+   public var imageName: String?
 
    /// Remote URL for the image
-   internal var imageURL: URL?
+   public var imageURL: URL?
 
    /// To specify an absolute origin.
-   internal var origin: CGPoint? = .zero
+   public var origin: CGPoint? = .zero
 
    /// To specify an absolute display size.
-   internal var displaySize: CGSize?
+   public var displaySize: CGSize?
 
    /// if determining the display size automatically this can be used to specify a maximum width. If it is not set then the text container's width will be used
-   internal var maximumDisplayWidth: CGFloat?
+   public var maximumDisplayWidth: CGFloat?
    
-   internal let radius: CGFloat?
+   public let radius: CGFloat?
 
    /// If both, imageName and imageURL are not present then an image will be created from this color and shown
-   internal var defaultImageColor: UIColor = .lightGray
+   public var defaultImageColor: UIColor = .lightGray
   }
 
-  @objc internal protocol AsyncTextAttachmentDelegate {
+  @objc public protocol AsyncTextAttachmentDelegate {
    /// Called when the image has been loaded
-   func textAttachmentDidLoadImage(textAttachment: AsyncTextAttachment, displaySizeChanged: Bool)
+   func textAttachmentDidLoadImage(textAttachment: AtributikaAsyncTextAttachment, displaySizeChanged: Bool)
   }
 
   /// An image text attachment that gets loaded from a remote URL
-  internal class AsyncTextAttachment: NSTextAttachment {
+  public class AtributikaAsyncTextAttachment: NSTextAttachment {
    
    let attributes: AtributikaAsynTextAttachmentAttributes
    
    /// A delegate to be informed of the finished download
-   internal weak var delegate: AsyncTextAttachmentDelegate?
+   public weak var delegate: AsyncTextAttachmentDelegate?
 
    /// Remember the text container from delegate message, the current one gets updated after the download
    weak var textContainer: NSTextContainer?
@@ -87,18 +87,18 @@
    private var downloadedImage: UIImage?
 
    /// Designated initializer
-   internal init(attributes: AtributikaAsynTextAttachmentAttributes, delegate: AsyncTextAttachmentDelegate? = nil) {
+   public init(attributes: AtributikaAsynTextAttachmentAttributes, delegate: AsyncTextAttachmentDelegate? = nil) {
     self.attributes = attributes
     self.delegate = delegate
     super.init(data: nil, ofType: nil)
    }
 
    @available(*, unavailable)
-   internal required init?(coder _: NSCoder) {
+   public required init?(coder _: NSCoder) {
     fatalError("init(coder:) has not been implemented")
    }
 
-   override internal var image: UIImage? {
+   override public var image: UIImage? {
     didSet {
      originalImageSize = image?.size
     }
@@ -154,7 +154,7 @@
     }
    }
 
-   override internal func image(forBounds _: CGRect, textContainer: NSTextContainer?, characterIndex _: Int) -> UIImage? {
+   override public func image(forBounds _: CGRect, textContainer: NSTextContainer?, characterIndex _: Int) -> UIImage? {
     // if downloaded image is present return that
     // if no then start kf, and return placeholder image
     let returnImage = UIImage(named: attributes.imageName ?? "xyz") ??
@@ -176,7 +176,7 @@
     return returnImage
    }
 
-   override internal func attachmentBounds(for _: NSTextContainer?, proposedLineFragment lineFrag: CGRect, glyphPosition _: CGPoint, characterIndex _: Int) -> CGRect {
+   override public func attachmentBounds(for _: NSTextContainer?, proposedLineFragment lineFrag: CGRect, glyphPosition _: CGPoint, characterIndex _: Int) -> CGRect {
     if let displaySize = attributes.displaySize {
      return CGRect(origin: attributes.origin ?? .zero, size: displaySize)
     }
@@ -192,7 +192,7 @@
    }
   }
 
-  internal extension NSLayoutManager {
+  public extension NSLayoutManager {
    /// Determine the character ranges for an attachment
    private func rangesForAttachment(attachment: NSTextAttachment) -> [NSRange]? {
     guard let attributedString = self.textStorage else {
@@ -253,7 +253,7 @@
  #endif
 
 
- internal extension UIImage {
+ public extension UIImage {
   convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
    let rect = CGRect(origin: .zero, size: size)
    UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)

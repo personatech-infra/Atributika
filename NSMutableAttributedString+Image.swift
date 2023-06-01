@@ -18,7 +18,7 @@ public extension NSMutableAttributedString {
   ///   - imageURL: url of the image. If url is not valid resource will be not downloaded.
   ///   - bounds: set a non `nil` value to express set the rect of attachment.
  internal convenience init?(imageAttributes: AtributikaAsynTextAttachmentAttributes) {
-   let attachment = AsyncTextAttachment(attributes: imageAttributes)
+   let attachment = AtributikaAsyncTextAttachment(attributes: imageAttributes)
    self.init(attachment: attachment)
   }
 

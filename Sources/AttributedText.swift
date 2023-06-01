@@ -78,7 +78,7 @@ extension AttributedTextProtocol {
      radius: CGFloat(string: tag.attributes["radius"])
     )
 
-    let attachment = AsyncTextAttachment(attributes: attributes)
+    let attachment = AtributikaAsyncTextAttachment(attributes: attributes)
     let imageAttributedString = NSMutableAttributedString(attachment: attachment)
      
      // Don't change original attributedString string here as doing that will ruin the range of other tags/styles
