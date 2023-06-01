@@ -12,6 +12,7 @@ let package = Package(name: "Atributika",
                                           targets: ["Atributika"])],
                       dependencies: [.package(url: "https://github.com/onevcat/Kingfisher.git", .upToNextMajor(from: "7.6.2"))],
                       targets: [.target(name: "Atributika",
+                                        dependencies: ["Kingfisher"],
                                         path: "Sources"),
                                 .testTarget(
                                     name: "AtributikaTests",
