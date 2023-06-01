@@ -51,15 +51,15 @@
 		DD7502881C68FEDE006590AF /* Atributika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* Atributika.framework */; };
 		DD7502921C690C7A006590AF /* Atributika.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* Atributika.framework */; };
 		DD75029A1C690CBE006590AF /* AtributikaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D6D9971BEFF375002C0205 /* AtributikaTests.swift */; };
-		FB0A474F2A2847FD00739B30 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0A474E2A2847FC00739B30 /* AtributikaAsynTextAttachmentAttributes.swift */; };
-		FB0A47502A2847FD00739B30 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0A474E2A2847FC00739B30 /* AtributikaAsynTextAttachmentAttributes.swift */; };
-		FB0A47512A2847FD00739B30 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0A474E2A2847FC00739B30 /* AtributikaAsynTextAttachmentAttributes.swift */; };
-		FB0A47522A2847FD00739B30 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0A474E2A2847FC00739B30 /* AtributikaAsynTextAttachmentAttributes.swift */; };
-		FB0A47572A284BCE00739B30 /* NSMutableAttributedString+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0A47562A284BCE00739B30 /* NSMutableAttributedString+Image.swift */; };
-		FB0A47582A284BCE00739B30 /* NSMutableAttributedString+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0A47562A284BCE00739B30 /* NSMutableAttributedString+Image.swift */; };
-		FB0A47592A284BCE00739B30 /* NSMutableAttributedString+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0A47562A284BCE00739B30 /* NSMutableAttributedString+Image.swift */; };
-		FB0A475A2A284BCE00739B30 /* NSMutableAttributedString+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0A47562A284BCE00739B30 /* NSMutableAttributedString+Image.swift */; };
 		FB0A475D2A284E2700739B30 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FB0A475C2A284E2700739B30 /* Kingfisher */; };
+		FB1EEC722A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1EEC702A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift */; };
+		FB1EEC732A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1EEC702A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift */; };
+		FB1EEC742A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1EEC702A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift */; };
+		FB1EEC752A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1EEC702A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift */; };
+		FB1EEC762A2892130067B386 /* NSMutableAttributedString+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1EEC712A2892130067B386 /* NSMutableAttributedString+Image.swift */; };
+		FB1EEC772A2892130067B386 /* NSMutableAttributedString+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1EEC712A2892130067B386 /* NSMutableAttributedString+Image.swift */; };
+		FB1EEC782A2892130067B386 /* NSMutableAttributedString+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1EEC712A2892130067B386 /* NSMutableAttributedString+Image.swift */; };
+		FB1EEC792A2892130067B386 /* NSMutableAttributedString+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1EEC712A2892130067B386 /* NSMutableAttributedString+Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,8 +135,8 @@
 		AD2FAA281CD0B6E100659CF4 /* AtributikaTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AtributikaTests.plist; sourceTree = "<group>"; };
 		DD75027A1C68FCFC006590AF /* Atributika-macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Atributika-macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD75028D1C690C7A006590AF /* Atributika-tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Atributika-tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB0A474E2A2847FC00739B30 /* AtributikaAsynTextAttachmentAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtributikaAsynTextAttachmentAttributes.swift; sourceTree = "<group>"; };
-		FB0A47562A284BCE00739B30 /* NSMutableAttributedString+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Image.swift"; sourceTree = "<group>"; };
+		FB1EEC702A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AtributikaAsynTextAttachmentAttributes.swift; path = Sources/AtributikaAsynTextAttachmentAttributes.swift; sourceTree = "<group>"; };
+		FB1EEC712A2892130067B386 /* NSMutableAttributedString+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSMutableAttributedString+Image.swift"; path = "Sources/NSMutableAttributedString+Image.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,8 +231,8 @@
 		52D6D9721BEFF229002C0205 = {
 			isa = PBXGroup;
 			children = (
-				FB0A47562A284BCE00739B30 /* NSMutableAttributedString+Image.swift */,
-				FB0A474E2A2847FC00739B30 /* AtributikaAsynTextAttachmentAttributes.swift */,
+				FB1EEC702A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift */,
+				FB1EEC712A2892130067B386 /* NSMutableAttributedString+Image.swift */,
 				1B38369F1F97C224001DB333 /* AttributedLabel.swift */,
 				1BB55AD01E5C73EF00CE6EAD /* Style.swift */,
 				1BB55ACC1E5C73EF00CE6EAD /* AttributedText.swift */,
@@ -622,15 +622,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB0A474F2A2847FD00739B30 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */,
 				1B2E55D92192FC8100D2B934 /* HTMLSpecials.swift in Sources */,
 				1BB55AD91E5C73F000CE6EAD /* NSScanner+Swift.swift in Sources */,
 				1BB55AD11E5C73EF00CE6EAD /* AttributedText.swift in Sources */,
 				1B3836A01F97C224001DB333 /* AttributedLabel.swift in Sources */,
 				1BB55ADD1E5C73F000CE6EAD /* String+Detection.swift in Sources */,
 				1BB55AD51E5C73F000CE6EAD /* NSAttributedString+Utils.swift in Sources */,
-				FB0A47572A284BCE00739B30 /* NSMutableAttributedString+Image.swift in Sources */,
 				1BB55AE11E5C73F000CE6EAD /* Style.swift in Sources */,
+				FB1EEC762A2892130067B386 /* NSMutableAttributedString+Image.swift in Sources */,
+				FB1EEC722A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,15 +646,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB0A47512A2847FD00739B30 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */,
 				1BB55ADB1E5C73F000CE6EAD /* NSScanner+Swift.swift in Sources */,
 				1BB55AD31E5C73F000CE6EAD /* AttributedText.swift in Sources */,
 				1B2E55DB219321FB00D2B934 /* HTMLSpecials.swift in Sources */,
 				1BB55ADF1E5C73F000CE6EAD /* String+Detection.swift in Sources */,
 				1B4638592259FFE400ED5BA9 /* AttributedLabel.swift in Sources */,
 				1BB55AD71E5C73F000CE6EAD /* NSAttributedString+Utils.swift in Sources */,
-				FB0A47592A284BCE00739B30 /* NSMutableAttributedString+Image.swift in Sources */,
 				1BB55AE31E5C73F000CE6EAD /* Style.swift in Sources */,
+				FB1EEC782A2892130067B386 /* NSMutableAttributedString+Image.swift in Sources */,
+				FB1EEC742A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,15 +662,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB0A47522A2847FD00739B30 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */,
 				1BB55ADC1E5C73F000CE6EAD /* NSScanner+Swift.swift in Sources */,
 				1BB55AD41E5C73F000CE6EAD /* AttributedText.swift in Sources */,
 				1B2E55DC219321FB00D2B934 /* HTMLSpecials.swift in Sources */,
 				1BB55AE01E5C73F000CE6EAD /* String+Detection.swift in Sources */,
 				1B46385A2259FFE400ED5BA9 /* AttributedLabel.swift in Sources */,
 				1BB55AD81E5C73F000CE6EAD /* NSAttributedString+Utils.swift in Sources */,
-				FB0A475A2A284BCE00739B30 /* NSMutableAttributedString+Image.swift in Sources */,
 				1BB55AE41E5C73F000CE6EAD /* Style.swift in Sources */,
+				FB1EEC792A2892130067B386 /* NSMutableAttributedString+Image.swift in Sources */,
+				FB1EEC752A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,15 +678,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB0A47502A2847FD00739B30 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */,
 				1BB55ADA1E5C73F000CE6EAD /* NSScanner+Swift.swift in Sources */,
 				1BB55AD21E5C73EF00CE6EAD /* AttributedText.swift in Sources */,
 				1B2E55DA219321FB00D2B934 /* HTMLSpecials.swift in Sources */,
 				1BB55ADE1E5C73F000CE6EAD /* String+Detection.swift in Sources */,
 				1B4638582259FFE400ED5BA9 /* AttributedLabel.swift in Sources */,
 				1BB55AD61E5C73F000CE6EAD /* NSAttributedString+Utils.swift in Sources */,
-				FB0A47582A284BCE00739B30 /* NSMutableAttributedString+Image.swift in Sources */,
 				1BB55AE21E5C73F000CE6EAD /* Style.swift in Sources */,
+				FB1EEC772A2892130067B386 /* NSMutableAttributedString+Image.swift in Sources */,
+				FB1EEC732A2892130067B386 /* AtributikaAsynTextAttachmentAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
