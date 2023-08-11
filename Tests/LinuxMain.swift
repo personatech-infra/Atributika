@@ -1,5 +1,5 @@
-@testable import AtributikaTests
 import XCTest
+@testable import AtributikaTests
 
 XCTMain([
     testCase(AtributikaTests.allTests),
