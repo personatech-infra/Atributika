@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(name: "Atributika",
                       platforms: [.macOS(.v10_14),
-                                  .iOS(.v12),
+                                  .iOS(.v13),
                                   .tvOS(.v9),
                                   .watchOS(.v2)],
                       products: [.library(name: "Atributika",
