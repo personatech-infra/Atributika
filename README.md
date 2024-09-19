@@ -10,6 +10,11 @@
 
 `Atributika` is an easy and painless way to build NSAttributedString. It is able to detect HTML-like tags, links, phone numbers, hashtags, any regex or even standard ios data detectors and style them with various attributes like font, color, etc. `Atributika` comes with drop-in label replacement `AttributedLabel` which is able to make any detection clickable
 
+> [!NOTE]
+> Try my new library for doing Auto Layout, a typesafe reimagination of Visual Format Language:
+> https://github.com/psharanda/FixFlex
+
+
 ## Intro
 NSAttributedString is really powerful but still a low level API which requires a lot of work to setup things. It is especially painful if string is template and real content is known only in runtime. If you are dealing with localizations, it is also not easy to build NSAttributedString. 
 
