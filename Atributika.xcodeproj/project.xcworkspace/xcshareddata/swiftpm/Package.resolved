@@ -1,23 +1,15 @@
 {
+  "originHash" : "917a2b512148612347b307b5f8d624e74df48af36fa322c80901a86fc0e1317f",
   "pins" : [
     {
-      "identity" : "swift-cmark",
+      "identity" : "kingfisher",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-cmark.git",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
       "state" : {
-        "revision" : "29d9c97e6310b87c4799268eaa2fc76164b2dbd8",
-        "version" : "0.2.0"
-      }
-    },
-    {
-      "identity" : "swift-markdown",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-markdown.git",
-      "state" : {
-        "revision" : "68b2fed9fb12fb71ac81e537f08bed430b189e35",
-        "version" : "0.2.0"
+        "branch" : "master",
+        "revision" : "4a2333d471e6aa671cbea6ed0c884eac4d90d6fb"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
