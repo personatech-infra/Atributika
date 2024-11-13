@@ -117,8 +117,6 @@
      kfOptions.append(.processor(processor))
     }
 
-    var displaySizeChanged = false
-
     KingfisherManager.shared.retrieveImage(
      with: imageURL,
      options: kfOptions
@@ -130,6 +128,8 @@
       let image = value.image
       let imageSize = image.size
 
+      var displaySizeChanged = false
+      
        if self.attributes.displaySize == nil {
        displaySizeChanged = true
       }
